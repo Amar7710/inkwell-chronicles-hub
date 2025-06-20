@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import PostView from "./pages/PostView";
 import CreatePost from "./pages/CreatePost";
 import Dashboard from "./pages/Dashboard";
+import Explore from "./pages/Explore";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/explore" element={<Explore />} />
           <Route path="/post/:id" element={<PostView />} />
           <Route path="/create" element={<CreatePost />} />
           <Route path="/edit/:id" element={<CreatePost />} />
